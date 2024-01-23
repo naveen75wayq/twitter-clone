@@ -19,22 +19,28 @@ function Posts({
 }: PostsProps): ReactElement {
     return (
         <div className={posts.container}>
-            <div className={posts.post_avatar}>
+            <div className={posts.post__avatar}>
                 <Avatar src='https://avataaars.io/?avatarStyle=Circle&topType=NoHair&accessoriesType=Kurt&facialHairType=BeardLight&facialHairColor=BrownDark&clotheType=Hoodie&clotheColor=Gray01&eyeType=Default&eyebrowType=Default&mouthType=Default&skinColor=Light' />
 
             </div>
-            <div className={posts.post_body}>
-                <div className={posts.post_header}>
-                    <div className={posts.post_headerText}>
-                        <h3>naveen_sadh{" "}<span>
-                            <VerifiedUser className={posts.post_badge} />
-                        </span></h3>
+            <div className={posts.post__body}>
+                <div className={posts.post__header}>
+                    <div className={posts.post__headerText}>
+                        <h3>Naveen Sadh{" "}
+                            <span className={posts.post__headerSpecial}>
+                                <VerifiedUser className={posts.post__badge} />
+                            </span>
+                        </h3>
                     </div>
 
-                    <div className={posts.header_discription}>
+                    <div className={posts.post__headerDescription}>
                         <p>This is a twitter clone</p>
                     </div>
-                    <img src="https://giphy.com/embed/l2YWpU1UPtpLJ7hOE" alt='' />
+                    <img
+                        src="https://i.pinimg.com/originals/53/c6/d5/53c6d53c0a420d130ea23d645533c934.gif"
+                        style={{ width: '100%', height: 'auto', maxWidth: '600px' }}
+                        alt=''
+                    />
                 </div>
             </div>
         </div>
