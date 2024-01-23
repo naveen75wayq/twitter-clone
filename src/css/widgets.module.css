@@ -1,8 +1,8 @@
 .container{
     flex: 0.3;
+    
 }
 .container > h1{
     font-size: 20px;
     font-weight: 800;
-    background-color: red;
 }
